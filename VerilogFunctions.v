@@ -12,8 +12,9 @@ This module is not functional module. DO NOT use it without any modification.
 
 /*
 Function--1 
-// function called clogb2 that returns an integer which has the
-//value of the ceiling of the log base 2                     
+// Function called clogb2 that returns an integer which has the
+// value of the ceiling of the log base 2 
+// Similarly, this function can be modified to other based log function                    
 */
 
 function integer clogb2 (input integer bit_depth);              
@@ -37,3 +38,40 @@ function integer pop_count(input integer argument);
 		pop_count = pop_count + (i & 1);
 	end
 endfunction    
+
+
+/*
+Function--3
+// Integer Adder Function. 
+// Similarly, this function can be modify to any other type of data adder
+*/
+function integer integer_sum(input integer a, b);
+	begin
+		integer_sum = a + b;	
+	end
+endfunction 
+
+
+/*
+Functin--4
+// Factorial Calculation for integer
+//
+*/
+function integer factorial(input integer a)
+	begin
+	integer i;
+	factorial = (a > 0)? 1:0;
+	for (i=2; i<=a;i=i+1)
+		factorial = i * factorial;			
+	end 
+endfunction
+
+
+
+
+
+
+
+
+
+
